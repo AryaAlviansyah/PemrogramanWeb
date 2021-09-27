@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile{
+    width: 100%;
+    float: left;
+    background-color: rgb(44, 172, 32);
+    background-size: 100px;
+}
+.w_profile{
+    width: 100%;
+    float: left;
+    background-color: lightblue;
+    padding: 20px;
+}
+.foto{
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+.foto img{
+        height: 200px;
+        width: 150px;
+        border-radius: 20%;
+        float: left;
+}
+.biodata{
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.music{
+    width: 100%;
+    background-color: cadetblue;
+    margin-top: 5px;
+    float: left;
+}
+.music h3{
+    border-radius: 20%
+    text-align: center;
+}
+.f_box{
+    display: flex;
+}
+.f_box li {
+    flex:auto;
+    list-style: none;
+    padding: 30px;
+}
+.f_box img{
+    width: 100%;
+    padding: 3%;
+}
+.f_box h2
+
+
+
