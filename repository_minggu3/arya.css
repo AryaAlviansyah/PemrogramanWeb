@@ -1,33 +1,37 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .profile{
     width: 100%;
     float: left;
-    background-color: rgb(44, 172, 32);
+    background-color: rgb(22, 160, 29);
     background-size: 100px;
 }
 .w_profile{
     width: 100%;
     float: left;
-    background-color: lightblue;
+    background-color: lightseagreen;
     padding: 20px;
 }
-.foto{
-    width: 100%;
-    float: left;
-    padding: 10px;
-}
 .foto img{
-        height: 200px;
-        width: 150px;
-        border-radius: 20%;
-        float: left;
+    height: 200px;
+    width: 160px;
+    border-radius: 20%;
+    float: left;
+    margin-left: 44%;
 }
+
 .biodata{
     float: left;
     text-align: center;
     width: 100%;
+    margin-top: 10px;
+}
+.biodata h4{
+    margin-block-end: 2px;
 }
 .music{
     width: 100%;
