@@ -7,71 +7,67 @@
     <link rel="stylesheet" href="style.css">
     <title>Repository Minggu 4</title>
 </head>
-<body>
+<body style="background-color: powderblue;">
+    <font  style="font-family:Franklin Gothic;">
+    <div style="background-image: url('6.jpg');" align="left">
     <center>
     <div class="header">
-        <h1 style="font-family:Franklin Gothic;">FORMULIR PPDB JALUR ZONASI TAHUN 2025</h1>
+        <br></br>
+        <h1 style="background-color: powderblue;">FORMULIR PPDB JALUR ZONASI TAHUN 2025</h1>
     </div>
+    </font>
     </center>
-    <form action="proses.php" method="POST">
+    <form action="hasil.php" method="POST">
         <div class="formulir">
-            <table border="1" align="center"style="background-color:white;" width="500px">
+            <table border="1" align="center"style="background-color: rgb(128, 190, 240);" width="500px">
                 <div class="pendaftaran">
                     <tr>
-                        <td><b>Nomor</b></td>
-                        <td colspan="3" align="center" style="background-color: lightcoral;"><b>INFO PENDAFTARAN</b></td>
+                        <td style="background-color: rgb(23, 124, 206);";"><b>No</b></td>
+                        <td colspan="4" align="center" style="background-color: rgb(23, 124, 206);"><b>INFO PENDAFTARAN</b></td>
                     </tr>
                     <tr>
                         <td align="center">1</td>
-                        <td width="500px">NISN</td >
-                        <td>:</td>
+                        <td width="500px">NISN</td>
                         <td><input type="number" name="fnisn" required=""></td>
                     </tr>
                     <tr>
                         <td align="center">2</td>
                         <td>Asal Sekolah</td>
-                        <td>:</td>
                         <td><input type="text" name="fasalSelolah" required=""></td>
                     </tr>
                     <tr>
                         <td align="center">3</td>
                         <td>Tahun Lulus</td>
-                        <td>:</td>
                         <td><input type="number" name="ftahunLulus" required=""></td>
                     </tr>
                 </div>
                 <div class="dataCalon">
                     <tr>
-                        <td colspan="3" style="background-color: lightcoral;"><b>DATA CALON PESERTA</b></td>
+                        <td colspan="4" style="background-color: rgb(23, 124, 206);";"><b>DATA CALON PESERTA</b></td>
                     </tr>
                     <tr>
                         <td align="center">4</td>
                         <td>Nama Lengkap</td>
-                        <td>:</td>
                         <td><input type="text" name="fnama" required=""></td>
                     </tr>
                     <tr>
                         <td align="center">5</td>
                         <td>NIK</td>
-                        <td>:</td>
                         <td><input type="number" name="fnik" required=""></td>
                     </tr>
                     <tr>
                         <td align="center">6</td>
                         <td>Tempat Lahir</td>
-                        <td>:</td>
                         <td><input type="text"name="ftempatLahir" required=""></td>
                     </tr>
                     <tr>
                         <td align="center">7</td>
                         <td>Tanggal Lahir</td>
-                        <td>:</td>
                         <td><input type="date" name="ftanggalLahir" required=""></td>
                     </tr>
                     <tr>
                         <td align="center">8</td>
                         <td>Jenis Kelamin</td>
-                        <td>:</td>
                         <td>
                             <input type="radio" name="fkelamin" value="Laki-Laki" required="">Laki-Laki
                             <input type="radio" name="fkelamin" value="Perempuan" required="">Perempuan
@@ -80,31 +76,39 @@
                     <tr>
                         <td align="center">9</td>
                         <td>Alamat</td>
-                        <td>:</td>
                         <td><input type="text" name="falamat" required=""></td>
                     </tr>
                         <div class="tempat">
                             <tr>
                                 <td align="center">10</td>
                                 <td>Desa/Kel.</td>
-                                <td>:</td>
                                 <td><input type="text" name="fdesa" required=""></td>
                             </tr>
                             <tr>
                                 <td align="center">11</td>
                                 <td>Kecamatan</td>
-                                <td>:</td>
                                 <td><input type="text" name="fkecamatan"required=""></td>
                             </tr>
                             <tr>
                                 <td align="center">12</td>
                                 <td>Kabupaten</td>
-                                <td>:</td>
                                 <td><input type="text" name="fkabupaten" required=""></td>
                             </tr>
-                            <tr><td align="center">13</td>
+                            <tr>
+                                <td align="center">13</td>
+                                <td>Agama</td>
+                                <td><select name="fagama" required="">
+                                    <option value="">== Agama ==</option>
+                                    <option value="islam">Islam</option>
+                                    <option value="Kristen Protestan ">Kristen Protestan </option>
+                                    <option value="Kristen Katolik ">Kristen Katolik </option>
+                                    <option value="hindu">Hindu</option>
+                                    <option value="buddha">Buddha</option>
+                                    <option value="khonghucu">Khonghucu</option>
+                                </select></td>
+                            </tr>
+                            <tr><td align="center">14</td>
                                 <td>Provinsi</td>
-                                <td>:</td>
                                 <td><select name="fprovinsi" required="">
                                     <option value="">:: Provinsi ::</option>>
                                     <option value="JB">Jawa Barat</option>
@@ -117,50 +121,28 @@
                             </tr>
                         </div>
                     <tr>
-                        <td align="center">14</td>
+                        <td align="center">15</td>
                         <td>Email Aktif</td>
-                        <td>:</td>
                         <td><input type="email" name="femail" required=""></td>
                     </tr>
                 </div>
                 <div class="dataOrtu">
                     <tr>
-                        <td colspan="3" style="background-color: lightcoral;"><b><b>DATA ORANG TUA</b></td>
-                    </tr>
-                    <tr>
-                        <td align="center">15</td>
-                        <td>Nomor Kartu Keluarga</td>
-                        <td>:</td>
-                        <td><input type="number" name="fkartu" required=""></td>
+                        <td colspan="4" style="background-color: rgb(23, 124, 206);";"><b><b>DATA ORANG TUA</b></td>
                     </tr>
                     <tr>
                         <td align="center">16</td>
-                        <td>Nama Ayah Kandung</td>
-                        <td>:</td>
-                        <td><input type="text" name="fayah" required=""></td>
+                        <td>Nomor Kartu Keluarga</td>
+                        <td><input type="number" name="fkartu" required=""></td>
                     </tr>
                     <tr>
                         <td align="center">17</td>
-                        <td>Agama</td>
-                        <td>:</td>
-                        <td><input type="text" name="fagama" required=""></td>
+                        <td>Nama Ayah Kandung</td>
+                        <td><input type="text" name="fayah" required=""></td>
                     </tr>
                     <tr>
                         <td align="center">18</td>
-                        <td>Pekerjaan</td>
-                        <td>:</td>
-                        <td><input type="text" name="fpekerjaan" required=""></td>
-                    </tr>
-                    <tr>
-                        <td align="center">19</td>
-                        <td>Nama Ibu Kandung</td>
-                        <td>:</td>
-                        <td><input type="text" name="fibu" required=""></td>
-                    </tr>
-                    <tr>
-                        <td align="center">20</td>
                         <td>Agama</td>
-                        <td>:</td>
                         <td><select name="fagama" required="">
                             <option value="">== Agama ==</option>
                             <option value="islam">Islam</option>
@@ -172,37 +154,55 @@
                         </select></td>
                     </tr>
                     <tr>
-                        <td align="center">21</td>
+                        <td align="center">19</td>
                         <td>Pekerjaan</td>
-                        <td>:</td>
                         <td><input type="text" name="fpekerjaan" required=""></td>
                     </tr>
                     <tr>
-                        <td colspan="3" style="background-color: lightcoral;"><b>Alamat Orang Tua</b></td>
+                        <td align="center">20</td>
+                        <td>Nama Ibu Kandung</td>
+                        <td><input type="text" name="fibu" required=""></td>
+                    </tr>
+                    <tr>
+                        <td align="center">21</td>
+                        <td>Agama</td>
+                        <td><select name="fagama" required="">
+                            <option value="">== Agama ==</option>
+                            <option value="islam">Islam</option>
+                            <option value="Kristen Protestan ">Kristen Protestan </option>
+                            <option value="Kristen Katolik ">Kristen Katolik </option>
+                            <option value="hindu">Hindu</option>
+                            <option value="buddha">Buddha</option>
+                            <option value="khonghucu">Khonghucu</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td align="center">22</td>
+                        <td>Pekerjaan</td>
+                        <td><input type="text" name="fpekerjaan" required=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background-color: rgb(23, 124, 206);";"><b>Alamat Orang Tua</b></td>
                     </tr>
                         <div class="tempat2">
                             <tr>
-                                <td align="center">22</td>
+                                <td align="center">23</td>
                                 <td>Desa/Kel.</td>
-                                <td>:</td>
                                 <td><input type="text" name="fdesa2" required=""></td>
                             </tr>
                             <tr>
-                                <td align="center">23</td>
+                                <td align="center">24</td>
                                 <td>Kecamatan</td>
-                                <td>:</td>
                                 <td><input type="text" name="fkecamatan2"required=""></td>
                             </tr>
                             <tr>
-                                <td align="center">24</td>
+                                <td align="center">25</td>
                                 <td>Kabupaten</td>
-                                <td>:</td>
                                 <td><input type="text" name="fkabupaten2" required=""></td>
                             </tr>
                             <tr>
-                                <td align="center">25</td>
+                                <td align="center">26</td>
                                 <td>Provinsi</td>
-                                <td>:</td>
                                 <td><select name="fprovinsi" required="">
                                     <option value="">:: Provinsi ::</option>>
                                     <option value="JB">Jawa Barat</option>
