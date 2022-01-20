@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=PT+Sans+Narrow:wght@700&display=swap');
+
+.navbar-brand{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.nav-link{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.btn{
+	font-family: 'PT Sans Narrow', sans-serif;	
+}
+
+.top{
+    font-family: 'PT Sans Narrow', sans-serif;	
+}
+.btn-color-theme{
+    font-family: 'offside', cursive;
+    color: grey;
+    background-color: grey;
+    margin-left:640px;
+}
+.row .card:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0, 4);
+    transform: scale(1.02);
+}
